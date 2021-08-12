@@ -4,8 +4,8 @@
 */
 const $ = new Env('墨迹天气');
 const notify = $.isNode() ? require('./sendNotify') : '';
-const City = encodeURIComponent($.getdata('city')||"广州市")  //可在此处修改城市
-const j = $.getdata('citynum')||"5";
+const City = encodeURIComponent($.getdata('city')||"广州")  //可在此处修改城市
+const j = $.getdata('citynum')||"2";
 let reduction = $.getdata('cut') || 'false'; //日志
 let daylys = $.getdata('day_desc') || 'true', //每日天气
     hourlys = $.getdata('hour_desc') || 'false', //小时预报
